@@ -119,7 +119,7 @@ $condition_key=trim($condition_key,'\'"');
 $condition_val="'".trim($condition_val,'\'"')."'";
 $namespace="'".trim($namespace,'\'"\\')."'";
 $wmiquery = 'SELECT '.$columns.' FROM '.$wmiclass; // basic query built
-if (isset($condition_key)) {
+if (isset($condition_key) && $condition_val != "''") {
     $wmiquery = $wmiquery.' WHERE '.$condition_key.'='.$condition_val; // if the query has a filter argument add it in
 }
 $wmiquery = '"'.$wmiquery.'"'; // encapsulate the query in " "
