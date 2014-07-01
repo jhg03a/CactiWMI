@@ -113,6 +113,11 @@ if ($opt_count > 0) { // test to see if using new style arguments and if so defa
 	display_help();
 }
 
+$columns=trim($columns,'\'"');
+$wmiclass=trim($wmiclass,'\'"');
+$condition_key=trim($condition_key,'\'"');
+$condition_val="'".trim($condition_val,'\'"')."'";
+$namespace="'".trim($namespace,'\'"\\')."'";
 $wmiquery = 'SELECT '.$columns.' FROM '.$wmiclass; // basic query built
 if (isset($condition_key)) {
     $wmiquery = $wmiquery.' WHERE '.$condition_key.'='.$condition_val; // if the query has a filter argument add it in
