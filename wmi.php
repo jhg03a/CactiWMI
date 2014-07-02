@@ -118,6 +118,10 @@ $wmiclass=trim($wmiclass,'\'"');
 $condition_key=trim($condition_key,'\'"');
 $condition_val="'".trim($condition_val,'\'"')."'";
 $namespace="'".trim($namespace,'\'"\\')."'";
+if ($namespace == "''") {
+	$namespace = '\'ROOT\CIMV2\'';
+}
+
 $wmiquery = 'SELECT '.$columns.' FROM '.$wmiclass; // basic query built
 if (isset($condition_key) && $condition_val != "''") {
     $wmiquery = $wmiquery.' WHERE '.$condition_key.'='.$condition_val; // if the query has a filter argument add it in
