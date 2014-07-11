@@ -1,0 +1,70 @@
+<interface>
+        <name>Get WMI Interface Traffic Information</name>
+        <script_path>|path_php_binary| -q |path_cacti|/scripts/query_wmi_netstats.php</script_path>
+        <arg_prepend>|host_hostname| "/etc/cacti/cactiwmi.pw"</arg_prepend>
+        <arg_index>index</arg_index>
+        <arg_query>query</arg_query>
+        <arg_get>get</arg_get>
+        <output_delimeter>!</output_delimeter>
+        <index_order>adapter_Index</index_order>
+        <index_order_type>numeric</index_order_type>
+        <index_title_format>|chosen_order_field|</index_title_format>
+
+	<fields>
+		<adapter_Index>
+			<name>Adapter Index</name>
+			<direction>input</direction>
+			<query_name>adapter_Index</query_name>
+		</adapter_Index>
+		<config_IPAddress>
+			<name>IP Address</name>
+			<direction>input</direction>
+			<query_name>config_IPAddress</query_name>
+		</config_IPAddress>
+		<config_MACAddress>
+			<name>MAC Address</name>
+			<direction>input</direction>
+			<query_name>config_MACAddress</query_name>
+		</config_MACAddress>
+		<adapter_Name>
+			<name>Adapter Name</name>
+			<direction>input</direction>
+			<query_name>adapter_Name</query_name>
+		</adapter_Name>
+		<adapter_Description>
+			<name>Adapter Description</name>
+			<direction>input</direction>
+			<query_name>adapter_Description</query_name>
+		</adapter_Description>
+		<config_Description>
+			<name>Config Description</name>
+			<direction>input</direction>
+			<query_name>config_Description</query_name>
+		</config_Description>
+		<adapter_NetConnectionStatus>
+			<name>Adapter Connection Status</name>
+			<direction>input</direction>
+			<query_name>adapter_NetConnectionStatus</query_name>
+		</adapter_NetConnectionStatus>
+		<stats_CurrentBandwidth>
+			<name>Adapter Speed</name>
+			<direction>input</direction>
+			<query_name>stats_CurrentBandwidth</query_name>
+		</stats_CurrentBandwidth>
+		<stats_BytesReceivedPersec>
+			<name>Bytes Received Per Second</name>
+			<direction>output</direction>
+			<query_name>stats_BytesReceivedPersec</query_name>
+		</stats_BytesReceivedPersec>
+		<stats_BytesSentPersec>
+			<name>Bytes Sent Per Second</name>
+			<direction>output</direction>
+			<query_name>stats_BytesSentPersec</query_name>
+		</stats_BytesSentPersec>
+		<stats_OutputQueueLength>
+			<name>Output Queue Length</name>
+			<direction>output</direction>
+			<query_name>stats_OutputQueueLength</query_name>
+		</stats_OutputQueueLength>
+	</fields>
+</interface>
