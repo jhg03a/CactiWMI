@@ -89,7 +89,7 @@
 				<value></value>
 				<gprint_id>hash_060024e9c43831e54eca8069317a2ce8c6f751</gprint_id>
 				<text_format>Maximum:</text_format>
-				<hard_return></hard_return>
+				<hard_return>on</hard_return>
 				<sequence>4</sequence>
 			</hash_100024a3e0a7cf3b01d2e74ab75ce189a88027>
 			<hash_10002449fb47fac0f8a576a053f498f2de9f8f>
@@ -154,7 +154,7 @@
 				<value></value>
 				<gprint_id>hash_060024e9c43831e54eca8069317a2ce8c6f751</gprint_id>
 				<text_format>Maximum:</text_format>
-				<hard_return></hard_return>
+				<hard_return>on</hard_return>
 				<sequence>11</sequence>
 			</hash_100024bad2848731b648442ffb0354d7fdf2f8>
 			<hash_1000243feb327a4fa9b3c6a55bfc5bd2de1cbc>
@@ -167,9 +167,74 @@
 				<value></value>
 				<gprint_id>hash_060024e9c43831e54eca8069317a2ce8c6f751</gprint_id>
 				<text_format>Total Out: |sum:auto:current:2:auto|</text_format>
-				<hard_return></hard_return>
+				<hard_return>on</hard_return>
 				<sequence>12</sequence>
 			</hash_1000243feb327a4fa9b3c6a55bfc5bd2de1cbc>
+			<hash_1000245162800064e40fbd5ad48b5f3ca44376>
+				<task_item_id>hash_080024042a205e5540846099cabf22385fc112</task_item_id>
+				<color_id>DA4725</color_id>
+				<alpha>FF</alpha>
+				<graph_type_id>4</graph_type_id>
+				<consolidation_function_id>3</consolidation_function_id>
+				<cdef_id>0</cdef_id>
+				<value></value>
+				<gprint_id>hash_060024e9c43831e54eca8069317a2ce8c6f751</gprint_id>
+				<text_format>Combined</text_format>
+				<hard_return></hard_return>
+				<sequence>13</sequence>
+			</hash_1000245162800064e40fbd5ad48b5f3ca44376>
+			<hash_10002456bdc1811de1346b74b67d0d31bedd7c>
+				<task_item_id>hash_080024042a205e5540846099cabf22385fc112</task_item_id>
+				<color_id>0</color_id>
+				<alpha>FF</alpha>
+				<graph_type_id>9</graph_type_id>
+				<consolidation_function_id>4</consolidation_function_id>
+				<cdef_id>0</cdef_id>
+				<value></value>
+				<gprint_id>hash_060024e9c43831e54eca8069317a2ce8c6f751</gprint_id>
+				<text_format>Current:</text_format>
+				<hard_return></hard_return>
+				<sequence>14</sequence>
+			</hash_10002456bdc1811de1346b74b67d0d31bedd7c>
+			<hash_100024d59e939f39a41f97a1e6176ea11f604e>
+				<task_item_id>hash_080024042a205e5540846099cabf22385fc112</task_item_id>
+				<color_id>0</color_id>
+				<alpha>FF</alpha>
+				<graph_type_id>9</graph_type_id>
+				<consolidation_function_id>1</consolidation_function_id>
+				<cdef_id>0</cdef_id>
+				<value></value>
+				<gprint_id>hash_060024e9c43831e54eca8069317a2ce8c6f751</gprint_id>
+				<text_format>Average:</text_format>
+				<hard_return></hard_return>
+				<sequence>15</sequence>
+			</hash_100024d59e939f39a41f97a1e6176ea11f604e>
+			<hash_100024c8a42b47d2467aaeed8029faafabc6e8>
+				<task_item_id>hash_080024042a205e5540846099cabf22385fc112</task_item_id>
+				<color_id>0</color_id>
+				<alpha>FF</alpha>
+				<graph_type_id>9</graph_type_id>
+				<consolidation_function_id>3</consolidation_function_id>
+				<cdef_id>0</cdef_id>
+				<value></value>
+				<gprint_id>hash_060024e9c43831e54eca8069317a2ce8c6f751</gprint_id>
+				<text_format>Maximum:</text_format>
+				<hard_return>on</hard_return>
+				<sequence>16</sequence>
+			</hash_100024c8a42b47d2467aaeed8029faafabc6e8>
+			<hash_1000241c89fe3cf440e1e9e4bc508b57a08cde>
+				<task_item_id>hash_080024042a205e5540846099cabf22385fc112</task_item_id>
+				<color_id>0</color_id>
+				<alpha>FF</alpha>
+				<graph_type_id>1</graph_type_id>
+				<consolidation_function_id>1</consolidation_function_id>
+				<cdef_id>0</cdef_id>
+				<value></value>
+				<gprint_id>hash_060024e9c43831e54eca8069317a2ce8c6f751</gprint_id>
+				<text_format>Total Combined: |sum:auto:current:2:auto|</text_format>
+				<hard_return></hard_return>
+				<sequence>17</sequence>
+			</hash_1000241c89fe3cf440e1e9e4bc508b57a08cde>
 		</items>
 		<inputs>
 			<hash_0900241157a3abd1ac778388280f4e4e4ae924>
@@ -184,6 +249,12 @@
 				<column_name>task_item_id</column_name>
 				<items>hash_000024bad2848731b648442ffb0354d7fdf2f8|hash_00002474ea711cca395188859c3c06b4d7ee54|hash_000024cb9f5e8fa65772113c2392f3bd0892fa|hash_0000247a238c53eafd9beb2a63ce83fd288e05|hash_0000243feb327a4fa9b3c6a55bfc5bd2de1cbc</items>
 			</hash_090024dcb0cd08b14eaacedaa3dd2d2816cf4b>
+			<hash_090024d4abd25c4fade92123aa1f61825bdf9b>
+				<name>Data Source [traffic_total]</name>
+				<description></description>
+				<column_name>task_item_id</column_name>
+				<items>hash_0000245162800064e40fbd5ad48b5f3ca44376|hash_00002456bdc1811de1346b74b67d0d31bedd7c|hash_000024d59e939f39a41f97a1e6176ea11f604e|hash_000024c8a42b47d2467aaeed8029faafabc6e8|hash_0000241c89fe3cf440e1e9e4bc508b57a08cde</items>
+			</hash_090024d4abd25c4fade92123aa1f61825bdf9b>
 		</inputs>
 	</hash_000024e4f4389176c3d9ae148f956ad7cb9fe2>
 	<hash_01002467ae0049f4b759e56958a5a5ec0749b1>
@@ -242,6 +313,20 @@
 				<t_data_input_field_id></t_data_input_field_id>
 				<data_input_field_id>0</data_input_field_id>
 			</hash_0800240cbdf7de1362edfd2baafee127598878>
+			<hash_080024042a205e5540846099cabf22385fc112>
+				<t_data_source_name></t_data_source_name>
+				<data_source_name>traffic_total</data_source_name>
+				<t_rrd_minimum></t_rrd_minimum>
+				<rrd_minimum>0</rrd_minimum>
+				<t_rrd_maximum></t_rrd_maximum>
+				<rrd_maximum>U</rrd_maximum>
+				<t_data_source_type_id></t_data_source_type_id>
+				<data_source_type_id>2</data_source_type_id>
+				<t_rrd_heartbeat></t_rrd_heartbeat>
+				<rrd_heartbeat>600</rrd_heartbeat>
+				<t_data_input_field_id></t_data_input_field_id>
+				<data_input_field_id>0</data_input_field_id>
+			</hash_080024042a205e5540846099cabf22385fc112>
 		</items>
 		<data>
 			<item_000>

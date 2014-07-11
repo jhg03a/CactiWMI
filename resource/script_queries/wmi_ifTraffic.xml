@@ -61,6 +61,11 @@
 			<direction>output</direction>
 			<query_name>stats_BytesSentPersec</query_name>
 		</stats_BytesSentPersec>
+		<stats_BytesTotalPersec>
+			<name>Bytes Total Per Second</name>
+			<direction>output</direction>
+			<query_name>stats_BytesTotalPersec</query_name>
+		</stats_BytesTotalPersec>
 		<stats_OutputQueueLength>
 			<name>Output Queue Length</name>
 			<direction>output</direction>

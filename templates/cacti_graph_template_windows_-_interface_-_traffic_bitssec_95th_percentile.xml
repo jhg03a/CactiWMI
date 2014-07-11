@@ -144,6 +144,58 @@
 				<hard_return>on</hard_return>
 				<sequence>8</sequence>
 			</hash_10002466c4cfaa554507407152d087401f4272>
+			<hash_100024dad1b2cec49033c20bef46b206751263>
+				<task_item_id>hash_080024042a205e5540846099cabf22385fc112</task_item_id>
+				<color_id>008A77</color_id>
+				<alpha>FF</alpha>
+				<graph_type_id>4</graph_type_id>
+				<consolidation_function_id>3</consolidation_function_id>
+				<cdef_id>hash_05002473f95f8b77b5508157d64047342c421e</cdef_id>
+				<value></value>
+				<gprint_id>hash_060024e9c43831e54eca8069317a2ce8c6f751</gprint_id>
+				<text_format>Total</text_format>
+				<hard_return></hard_return>
+				<sequence>9</sequence>
+			</hash_100024dad1b2cec49033c20bef46b206751263>
+			<hash_1000241bfc0c81351a468e38b88e146b689946>
+				<task_item_id>hash_080024042a205e5540846099cabf22385fc112</task_item_id>
+				<color_id>0</color_id>
+				<alpha>FF</alpha>
+				<graph_type_id>9</graph_type_id>
+				<consolidation_function_id>4</consolidation_function_id>
+				<cdef_id>hash_05002473f95f8b77b5508157d64047342c421e</cdef_id>
+				<value></value>
+				<gprint_id>hash_060024e9c43831e54eca8069317a2ce8c6f751</gprint_id>
+				<text_format>Current:</text_format>
+				<hard_return></hard_return>
+				<sequence>10</sequence>
+			</hash_1000241bfc0c81351a468e38b88e146b689946>
+			<hash_100024c50629361112e4d7930b1382a5b0f7d6>
+				<task_item_id>hash_080024042a205e5540846099cabf22385fc112</task_item_id>
+				<color_id>0</color_id>
+				<alpha>FF</alpha>
+				<graph_type_id>9</graph_type_id>
+				<consolidation_function_id>1</consolidation_function_id>
+				<cdef_id>hash_05002473f95f8b77b5508157d64047342c421e</cdef_id>
+				<value></value>
+				<gprint_id>hash_060024e9c43831e54eca8069317a2ce8c6f751</gprint_id>
+				<text_format>Average:</text_format>
+				<hard_return></hard_return>
+				<sequence>11</sequence>
+			</hash_100024c50629361112e4d7930b1382a5b0f7d6>
+			<hash_10002410fdad7ebb203432e02f898e0c88aa1a>
+				<task_item_id>hash_080024042a205e5540846099cabf22385fc112</task_item_id>
+				<color_id>0</color_id>
+				<alpha>FF</alpha>
+				<graph_type_id>9</graph_type_id>
+				<consolidation_function_id>3</consolidation_function_id>
+				<cdef_id>hash_05002473f95f8b77b5508157d64047342c421e</cdef_id>
+				<value></value>
+				<gprint_id>hash_060024e9c43831e54eca8069317a2ce8c6f751</gprint_id>
+				<text_format>Maximum:</text_format>
+				<hard_return>on</hard_return>
+				<sequence>12</sequence>
+			</hash_10002410fdad7ebb203432e02f898e0c88aa1a>
 			<hash_1000242b0a6822a5a27ca60f3f951573b2a596>
 				<task_item_id>0</task_item_id>
 				<color_id>0</color_id>
@@ -155,7 +207,7 @@
 				<gprint_id>hash_060024e9c43831e54eca8069317a2ce8c6f751</gprint_id>
 				<text_format></text_format>
 				<hard_return>on</hard_return>
-				<sequence>9</sequence>
+				<sequence>13</sequence>
 			</hash_1000242b0a6822a5a27ca60f3f951573b2a596>
 			<hash_100024fe79fffa497f01e277044984689c613c>
 				<task_item_id>hash_080024b8485afc33815771ab8074989ee21cb6</task_item_id>
@@ -168,7 +220,7 @@
 				<gprint_id>hash_060024e9c43831e54eca8069317a2ce8c6f751</gprint_id>
 				<text_format>95th Percentile</text_format>
 				<hard_return></hard_return>
-				<sequence>10</sequence>
+				<sequence>14</sequence>
 			</hash_100024fe79fffa497f01e277044984689c613c>
 			<hash_100024aae3942c32fe83b0d038e4640bd10917>
 				<task_item_id>hash_080024b8485afc33815771ab8074989ee21cb6</task_item_id>
@@ -181,10 +233,16 @@
 				<gprint_id>hash_060024e9c43831e54eca8069317a2ce8c6f751</gprint_id>
 				<text_format>(|95:bits:6:max:2| mbit in+out)</text_format>
 				<hard_return></hard_return>
-				<sequence>11</sequence>
+				<sequence>15</sequence>
 			</hash_100024aae3942c32fe83b0d038e4640bd10917>
 		</items>
 		<inputs>
+			<hash_090024f54d792396ffbf021af903be01c6e1f9>
+				<name>Data Source [traffic_total]</name>
+				<description></description>
+				<column_name>task_item_id</column_name>
+				<items>hash_000024dad1b2cec49033c20bef46b206751263|hash_0000241bfc0c81351a468e38b88e146b689946|hash_000024c50629361112e4d7930b1382a5b0f7d6|hash_00002410fdad7ebb203432e02f898e0c88aa1a</items>
+			</hash_090024f54d792396ffbf021af903be01c6e1f9>
 			<hash_090024df465434c97933096aa8cea7ea2c279b>
 				<name>Data Source [traffic_in]</name>
 				<description></description>
@@ -255,6 +313,20 @@
 				<t_data_input_field_id></t_data_input_field_id>
 				<data_input_field_id>0</data_input_field_id>
 			</hash_0800240cbdf7de1362edfd2baafee127598878>
+			<hash_080024042a205e5540846099cabf22385fc112>
+				<t_data_source_name></t_data_source_name>
+				<data_source_name>traffic_total</data_source_name>
+				<t_rrd_minimum></t_rrd_minimum>
+				<rrd_minimum>0</rrd_minimum>
+				<t_rrd_maximum></t_rrd_maximum>
+				<rrd_maximum>U</rrd_maximum>
+				<t_data_source_type_id></t_data_source_type_id>
+				<data_source_type_id>2</data_source_type_id>
+				<t_rrd_heartbeat></t_rrd_heartbeat>
+				<rrd_heartbeat>600</rrd_heartbeat>
+				<t_data_input_field_id></t_data_input_field_id>
+				<data_input_field_id>0</data_input_field_id>
+			</hash_080024042a205e5540846099cabf22385fc112>
 		</items>
 		<data>
 			<item_000>
