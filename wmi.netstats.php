@@ -108,6 +108,28 @@ function wmic_call($in_host, $in_cred, $in_class, $in_namespace, $in_columns, $i
 		echo "WMI Client Output: " . implode("\n", $wmiout) . "\n";
 		exit($execstatus);
 	}
+	// Chomp any errors that wmic might have thrown, but still worked
+	$classindex = -1;
+	for($i=0;$i<count($wmiout);$i++)
+	{
+		if(0 === strpos($wmiout[$i], 'CLASS: '))
+		{
+			$classindex = $i;
+			break;
+		}
+	}
+	// Abort is the wmi output isn't normally structured
+	if($classindex == -1)
+	{
+		echo "WMI Class Chomp Failed!\nWMI Client Output: ".implode("\n", $wmiout)."\n";
+		exit(1);
+	}
+	for($i=0;$i<$classindex;$i++)
+	{
+		unset($wmiout[$i]);
+	}
+	// reindex the array output
+	$wmiout = array_values($wmiout);
 
 	$wmi_count = count($wmiout); // count the number of lines returned from wmic, saves recouting later
 	$names = explode('|',$wmiout[1]); // build the names list to dymanically output it
